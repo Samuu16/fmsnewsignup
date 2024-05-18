@@ -13,6 +13,8 @@ db_config = {
     'database': 'database.db',             # Replace with your database name
 }
 
+wsgi_app = app.wsgi_app
+
 def get_db_connection():
     return mysql.connector.connect(**db_config)
 
